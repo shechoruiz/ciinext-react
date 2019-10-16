@@ -76,4 +76,5 @@ yarn-error.log
 dist/
 
 #images
+src/assets/static/*.*
 src/assets/styles/fonts/*.*

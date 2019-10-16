@@ -1,12 +1,15 @@
-hr{
+@import '../Vars.scss';
+
+
+ hr{
 	height: 1px;
 	color: #FFC20F;
 	background-color: #FFC20F;	
 	border: none;
 	width: 90%
-}
+ }
 
 h2{
-	font-family:"MOON GET! Heavy";
+	//font-family:$subtitle-font;
 	margin-left: 30px;
 }

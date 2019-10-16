@@ -40,12 +40,34 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|gif|jpg|svg)$/,
+                test: /\.(png|gif|jpg)$/,
                 use: [
                     {
                         'loader': 'file-loader',
                         options: {
                             name: 'assets/[hash].[ext]'
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.ttf$/,
+                use: [
+                    {
+                        'loader': 'ttf-loader',
+                        options: {
+                            name: 'assets/styles/fonts/[hash].[ext]',
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: 'svg-inline-loader',
+                        options: {
+                            name: 'assets/static/[hash].[ext]'
                         }
                     }
                 ]
