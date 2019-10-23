@@ -12,11 +12,10 @@ import useInitialState from '../hooks/useInitialState'
 
 const API = 'http://localhost:3000/initalState';
 
-const App = () => {
+const Home = () => {
     const initialState = useInitialState(API);
     return (
-        <div className="App">
-            <Header />
+        <>
             {initialState.mylist.length > 0 && 
                 <Categories title="Lo más popular">
                     <Carousel>
@@ -48,14 +47,8 @@ const App = () => {
                     <CarouselItem />
                 </Carousel>
             </Categories>
-
-            <Footer>
-                <FooterLogo />
-                <FooterSocial />
-                <FooterMarca />
-            </Footer>
-        </div>
+        </>
     )
 }
 
-export default App;
+export default Home;

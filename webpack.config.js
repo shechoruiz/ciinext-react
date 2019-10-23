@@ -65,14 +65,14 @@ module.exports = {
                 test: /\.svg$/,
                 use: [
                     {
-                        loader: 'svg-inline-loader',
-                        options: {
-                            name: 'assets/static/[hash].[ext]'
-                        }
+                        loader: 'svg-inline-loader?classPrefix',
                     }
                 ]
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     plugins:[
         new HtmlWebPackPlugin({

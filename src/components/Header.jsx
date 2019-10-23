@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/components/Header.scss';
 import iconHamburguer from '../assets/static/icon-hamburguer.png';
 import iconLens from '../assets/static/icon-lens.png';
@@ -24,7 +25,9 @@ const Header = () => (
 				</ul>
 			</div>
 			<div className="header__img3">
-				<img className="header__img3--logo" src={logo} alt="Logo Ciinext"/>
+				<Link to="/">
+					<img className="header__img3--logo" src={logo} alt="Logo Ciinext"/>
+				</Link>
 			</div>
 		</div>
 	</header>
